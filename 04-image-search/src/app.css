@@ -1,0 +1,35 @@
+.search-bar {
+  border: 1px solid hsl(0, 0%, 83%);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.search-bar form {
+  display: flex;
+
+  align-items: center;
+  gap: 1rem;
+}
+.search-bar input {
+  width: 200px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+.search-bar button {
+  border: 1px solid gray;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.image-list {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.image-list img {
+  width: 100%;
+  border-radius: 5px;
+}

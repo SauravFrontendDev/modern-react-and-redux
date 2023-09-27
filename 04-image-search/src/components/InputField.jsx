@@ -7,8 +7,9 @@ const InputField = ({ onSubmit }) => {
     onSubmit(searchTerm);
   };
   return (
-    <div>
+    <div className="search-bar">
       <form onSubmit={handleClick}>
+        <label htmlFor="#">Enter Search Term</label>
         <input
           type="text"
           value={searchTerm}
