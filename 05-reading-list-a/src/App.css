@@ -7,14 +7,18 @@
   bottom: 0;
   background-color: #2ec4b6;
   color: #eaf5f4;
-  padding: 1rem 2rem;
+  padding: 2rem;
   width: 100%;
 }
 
+.book-create h3 {
+  padding-inline: 20rem;
+}
 .book-create form {
   display: flex;
   flex-direction: column;
   gap: 5px;
+  padding-inline: 20rem;
 }
 .book-create label {
   font-size: 14px;
@@ -34,4 +38,69 @@
   cursor: pointer;
   width: max-content;
   padding: 0.5rem 2rem;
+}
+
+.book-list {
+  background-color: springgreen;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  height: 100vh;
+  gap: 1rem;
+  align-items: center;
+}
+
+.book-show {
+  background-color: #eaf5f4;
+  padding: 1rem;
+  border-radius: 5px;
+  font-size: 1.3rem;
+  text-align: center;
+  width: 40rem;
+  position: relative;
+}
+
+.remove-btn,
+.edit-btn {
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  position: absolute;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: transparent;
+  text-shadow: 0 0 0 #fff;
+}
+.edit-btn:hover,
+.remove-btn:hover {
+  padding: 0.75rem;
+}
+.edit-btn:active,
+.remove-btn:active {
+  width: 1.35rem;
+  height: 1.35rem;
+}
+.remove-btn {
+  background-color: orangered;
+  top: 0.5rem;
+  right: 1rem;
+}
+.edit-btn {
+  background-color: blueviolet;
+
+  top: 0.5rem;
+
+  right: 4rem;
+}
+
+.book-edit {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.book-edit input,
+.book-edit button {
+  padding: 0.4rem;
 }
